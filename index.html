@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyWise | Home</title>
+    <!-- One shared CSS file for the whole website -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar">
+            <!-- Clicking the logo returns to the Home page -->
+            <div class="brand" onclick="navigateTo('index.html')">
+                <img src="images/PowerIcon.png" alt="EnergyWise power logo">
+                <div>
+                    <span class="brand-name">EnergyWise</span>
+                    <span class="brand-subtitle">Australia</span>
+                </div>
+            </div>
+            <!-- Navigation menu -->
+            <div class="nav-links">
+                <!-- Active class shows the current page -->
+                <button class="nav-button active"
+                        onclick="navigateTo('index.html')">
+                    Home
+                </button>
+                <button class="nav-button"
+                        onclick="navigateTo('televisions.html')">
+                    Televisions
+                </button>
+                <button class="nav-button"
+                        onclick="navigateTo('about.html')">
+                    About Us
+                </button>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tag">SMARTER ENERGY CHOICES</p>
+                <h1>
+                    Understand Your
+                    <span>Energy Consumption</span>
+                </h1>
+                <p class="hero-description">
+                    Explore how household appliances use electricity and
+                    learn how smarter appliance choices can improve energy
+                    efficiency in Australian homes.
+                </p>
+                <div class="hero-buttons">
+                    <button class="primary-button"
+                            onclick="navigateTo('televisions.html')">
+                        Explore Televisions →
+                    </button>
+                    <button class="secondary-button"
+                            onclick="navigateTo('about.html')">
+                        About This Project
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Visual card using the supplied logo -->
+            <div class="hero-card">
+                <img src="images/PowerIcon.png"
+                     alt="Power energy icon"
+                     class="hero-logo">
+                <h2>Power Your Knowledge</h2>
+                <p>
+                    Understanding how appliances consume electricity is
+                    an important step towards making informed energy choices.
+                </p>
+                <div class="mini-info">
+                    <div>
+                        <strong>Compare</strong>
+                        <span>Appliances</span>
+                    </div>
+                    <div>
+                        <strong>Understand</strong>
+                        <span>Energy Use</span>
+                    </div>
+                    <div>
+                        <strong>Choose</strong>
+                        <span>Efficiently</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHY ENERGY MATTERS ================= -->
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">HOUSEHOLD ENERGY</p>
+                <h2>Why Energy Efficiency Matters</h2>
+                <p>
+                    Learning about appliance energy consumption can help
+                    consumers understand electricity use and make more
+                    informed purchasing and usage decisions.
+                </p>
+            </div>
+            <div class="card-grid">
+                <article class="info-card">
+                    <div class="icon-box">
+                        <img src="images/energy.png" alt="Energy icon">
+                    </div>
+                    <h3>Understand Energy</h3>
+                    <p>
+                        Learn how electricity consumption can differ between
+                        household appliances and how usage time affects
+                        overall energy consumption.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <div class="icon-box">
+                        <img src="images/smart-choice.png" alt="Smart choice icon">
+                    </div>
+                    <h3>Make Smart Choices</h3>
+                    <p>
+                        Comparing appliance characteristics can help
+                        consumers consider energy efficiency when making
+                        purchasing decisions.
+                    </p>
+                </article>
+                <article class="info-card">
+                    <div class="icon-box">
+                        <img src="images/sustainability.png" alt="Sustainability icon">
+                    </div>
+                    <h3>Use Energy Wisely</h3>
+                    <p>
+                        Responsible appliance use can reduce unnecessary
+                        electricity consumption and support more sustainable
+                        energy habits.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= HOW IT WORKS ================= -->
+        <section class="steps-section">
+            <div class="section-heading">
+                <p class="tag">EXPLORE THE WEBSITE</p>
+                <h2>Learn About Appliance Energy</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div>
+                        <h3>Explore</h3>
+                        <p>
+                            Visit the appliance pages to explore energy
+                            consumption information.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div>
+                        <h3>Compare</h3>
+                        <p>
+                            Compare example appliances and understand
+                            differences in electricity consumption.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div>
+                        <h3>Calculate</h3>
+                        <p>
+                            Use our interactive calculator to estimate
+                            television energy consumption.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CALL TO ACTION ================= -->
+        <section class="cta-section">
+            <div>
+                <p class="tag light-tag">START EXPLORING</p>
+                <h2>How much energy does a television use?</h2>
+                <p>
+                    Explore our television page and try the interactive
+                    energy consumption calculator.
+                </p>
+            </div>
+            <button class="primary-button"
+                    onclick="navigateTo('televisions.html')">
+                Explore Televisions →
+            </button>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/PowerIcon.png"
+                     alt="EnergyWise power logo">
+                <div>
+                    <strong>EnergyWise</strong>
+                    <span>Appliance Energy Consumption</span>
+                </div>
+            </div>
+            <p>
+                Educational website exploring appliance energy consumption
+                in the Australian market.
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Miheesha Samarakoon. All rights reserved.</p>
+            <p>
+                GenAI acknowledgement: Generative AI was used to assist
+                with code development and website content.
+            </p>
+        </div>
+    </footer>
+    
+    <!-- One shared JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

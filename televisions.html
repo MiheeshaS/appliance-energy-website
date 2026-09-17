@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnergyWise | Televisions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+    <header>
+        <nav class="navbar">
+            <div class="brand" onclick="navigateTo('index.html')">
+                <img src="images/PowerIcon.png"
+                     alt="EnergyWise power logo">
+                <div>
+                    <span class="brand-name">EnergyWise</span>
+                    <span class="brand-subtitle">Australia</span>
+                </div>
+            </div>
+            <div class="nav-links">
+                <button class="nav-button"
+                        onclick="navigateTo('index.html')">
+                    Home
+                </button>
+                <button class="nav-button active"
+                        onclick="navigateTo('televisions.html')">
+                    Televisions
+                </button>
+                <button class="nav-button"
+                        onclick="navigateTo('about.html')">
+                    About Us
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+        <!-- Page Banner -->
+        <section class="page-banner">
+            <p class="tag">APPLIANCE ENERGY</p>
+            <h1>Television Energy Consumption</h1>
+            <p>
+                Explore example television energy consumption information
+                and learn how power rating and usage time can affect
+                household electricity consumption.
+            </p>
+        </section>
+
+        <!-- ================= TV COMPARISON ================= -->
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">COMPARE TELEVISIONS</p>
+                <h2>Example Energy Consumption</h2>
+                <p>
+                    The following values are placeholder demonstration data
+                    showing how television energy information can be presented.
+                </p>
+            </div>
+            <div class="tv-grid">
+                <!-- Television 1 -->
+                <article class="tv-card">
+                    <div class="tv-image">
+                        <div class="tv-screen">
+                            <span>32"</span>
+                        </div>
+                        <div class="tv-stand"></div>
+                    </div>
+                    <div class="tv-content">
+                        <span class="energy-label">
+                            LOWER CONSUMPTION
+                        </span>
+                        <h3>32" LED Television</h3>
+                        <div class="tv-data">
+                            <div>
+                                <span>Power Rating</span>
+                                <strong>50 W</strong>
+                            </div>
+                            <div>
+                                <span>Daily Usage</span>
+                                <strong>4 hours</strong>
+                            </div>
+                            <div>
+                                <span>Daily Energy</span>
+                                <strong>0.20 kWh</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Television 2 -->
+                <article class="tv-card">
+                    <div class="tv-image">
+                        <div class="tv-screen">
+                            <span>55"</span>
+                        </div>
+                        <div class="tv-stand"></div>
+                    </div>
+                    <div class="tv-content">
+                        <span class="energy-label">
+                            MEDIUM CONSUMPTION
+                        </span>
+                        <h3>55" LED Television</h3>
+                        <div class="tv-data">
+                            <div>
+                                <span>Power Rating</span>
+                                <strong>100 W</strong>
+                            </div>
+                            <div>
+                                <span>Daily Usage</span>
+                                <strong>4 hours</strong>
+                            </div>
+                            <div>
+                                <span>Daily Energy</span>
+                                <strong>0.40 kWh</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Television 3 -->
+                <article class="tv-card">
+                    <div class="tv-image">
+                        <div class="tv-screen">
+                            <span>75"</span>
+                        </div>
+                        <div class="tv-stand"></div>
+                    </div>
+                    <div class="tv-content">
+                        <span class="energy-label">
+                            HIGHER CONSUMPTION
+                        </span>
+                        <h3>75" Television</h3>
+
+                        <div class="tv-data">
+                            <div>
+                                <span>Power Rating</span>
+                                <strong>180 W</strong>
+                            </div>
+                            <div>
+                                <span>Daily Usage</span>
+                                <strong>4 hours</strong>
+                            </div>
+                            <div>
+                                <span>Daily Energy</span>
+                                <strong>0.72 kWh</strong>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="data-note">
+                Note: These values are placeholder examples for demonstration
+                purposes and do not represent specific television products.
+            </p>
+        </section>
+
+        <!-- ================= CALCULATOR ================= -->
+        <section class="calculator-section">
+            <div class="calculator-description">
+                <p class="tag">INTERACTIVE TOOL</p>
+                <h2>Energy Consumption Calculator</h2>
+                <p>
+                    Enter the television's power rating and the number of
+                    hours it is used per day.
+                </p>
+                <div class="formula-box">
+                    <span>FORMULA</span>
+                    <strong>
+                        Energy (kWh) = Power (W) × Hours ÷ 1000
+                    </strong>
+                </div>
+            </div>
+            <div class="calculator-card">
+                <div class="input-group">
+                    <label for="power">
+                        Television Power
+                    </label>
+                    <div class="input-wrapper">
+                        <input
+                            type="number"
+                            id="power"
+                            placeholder="e.g. 100"
+                            min="0">
+                        <span>Watts</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="hours">
+                        Daily Usage
+                    </label>
+                    <div class="input-wrapper">
+                        <input
+                            type="number"
+                            id="hours"
+                            placeholder="e.g. 4"
+                            min="0"
+                            max="24">
+                        <span>Hours</span>
+                    </div>
+                </div>
+                <button class="primary-button full-button"
+                        onclick="calculateEnergy()">
+                    Calculate Energy
+                </button>
+                <!-- JavaScript changes this result -->
+                <div class="result-box">
+                    <p>Estimated Daily Consumption</p>
+                    <strong id="energyResult">
+                        0.00 kWh
+                    </strong>
+                    <span id="resultMessage">
+                        Enter your television details above.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ENERGY TIPS ================= -->
+        <section class="content-section">
+            <div class="section-heading">
+                <p class="tag">ENERGY-SAVING TIPS</p>
+                <h2>Using Your Television Efficiently</h2>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <span class="tip-number">01</span>
+                    <div>
+                        <h3>Check Energy Information</h3>
+                        <p>
+                            Compare available energy information when
+                            considering different television models.
+                        </p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">02</span>
+                    <div>
+                        <h3>Turn It Off</h3>
+                        <p>
+                            Avoid leaving the television operating when
+                            nobody is watching it.
+                        </p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">03</span>
+                    <div>
+                        <h3>Use Energy-Saving Settings</h3>
+                        <p>
+                            Consider using available eco or energy-saving
+                            settings where appropriate.
+                        </p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-number">04</span>
+                    <div>
+                        <h3>Consider Screen Size</h3>
+                        <p>
+                            Consider your actual viewing requirements
+                            when choosing the size of a television.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/PowerIcon.png"
+                     alt="EnergyWise power logo">
+                <div>
+                    <strong>EnergyWise</strong>
+                    <span>Appliance Energy Consumption</span>
+                </div>
+            </div>
+            <p>
+                Educational website exploring appliance energy consumption
+                in the Australian market.
+            </p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Miheesha Samarakoon. All rights reserved.</p>
+            <p>
+                GenAI acknowledgement: Generative AI was used to assist
+                with code development and website content.
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
