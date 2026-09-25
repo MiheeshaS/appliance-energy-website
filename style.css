@@ -1027,6 +1027,11 @@ footer {
     border-radius: 14px;
     overflow: hidden;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+    /* ADD THESE */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .insight-card:hover {
@@ -1042,6 +1047,9 @@ footer {
     align-items: flex-start;
     gap: 14px;
     padding: 24px 24px 18px;
+
+    /* ADD THIS */
+    min-height: 125px;
 }
 
 .insight-number {
@@ -1072,6 +1080,9 @@ footer {
 
 .insight-chart {
     padding: 0 20px;
+
+    /* ADD THIS */
+    flex-shrink: 0;
 }
 
 .insight-chart img {
@@ -1120,6 +1131,10 @@ footer {
 
     background: #fff8dc;
     border-top: 1px solid #ead9a4;
+
+    /* ADD THESE */
+    flex: 1;
+    min-height: 145px;
 }
 
 .insight-result > strong {
