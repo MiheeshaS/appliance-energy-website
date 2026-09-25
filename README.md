@@ -332,13 +332,13 @@ This allows the website to be redeployed when updated code is pushed to the repo
 ### Live Website
 
 **Vercel:**  
-`ADD YOUR VERCEL WEBSITE LINK HERE`
+https://energywise.vercel.app/
 
 
 ### GitHub Repository
 
 **GitHub:**  
-`ADD YOUR GITHUB REPOSITORY LINK HERE`
+https://github.com/MiheeshaS/appliance-energy-website
 
 
 ---
