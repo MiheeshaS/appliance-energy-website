@@ -1004,236 +1004,155 @@ footer {
     .footer-container > p {
         text-align: left;
     }
-
-    /* =========================================================
-   AUSTRALIAN TV INSIGHTS
-   ========================================================= */
-
-.insights-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1200px;
-    margin: 45px auto;
 }
 
+/* =========================================================
+   TELEVISION DATA STORY
+   ========================================================= */
 
-/* Individual Insight Card */
-
-.insight-card {
+.data-story-item {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px;
     background: #ffffff;
     border: 1px solid #ead9a4;
     border-radius: 14px;
-    overflow: hidden;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.insight-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(67, 53, 35, 0.10);
-}
-
-
-/* Card Heading */
-
-.insight-header {
+.story-heading {
     display: flex;
     align-items: flex-start;
-    gap: 14px;
-    padding: 24px 24px 18px;
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
-.insight-number {
-    min-width: 42px;
-    height: 42px;
-
+.story-number {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    min-width: 55px;
+    height: 55px;
+    border-radius: 50%;
     background: #fff1bd;
     color: #d66a00;
-
-    border-radius: 50%;
-
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
 }
 
-.insight-header h3 {
-    margin: 7px 0 0;
-    font-size: 18px;
-    line-height: 1.35;
+.story-heading h3 {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 1.4;
 }
 
-
-/* KNIME Chart */
-
-.insight-chart {
-    padding: 0 20px;
+.story-chart {
+    margin: 25px 0;
+    text-align: center;
 }
 
-.insight-chart img {
+.story-chart img {
     display: block;
     width: 100%;
-    height: 260px;
-    object-fit: contain;
-    background: #ffffff;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 
-/* Temporary Chart Placeholder */
+/* Temporary area shown until KNIME screenshot is added */
 
 .chart-placeholder {
-    height: 260px;
-
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     background: #fff8dc;
-    border: 2px dashed #e4c66e;
-    border-radius: 8px;
-
-    text-align: center;
+    border: 2px dashed #e1bf67;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .chart-placeholder span {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 700;
     color: #d66a00;
+    margin-bottom: 10px;
 }
 
 .chart-placeholder p {
-    margin: 8px 15px 0;
-    color: #725d3d;
-}
-
-
-/* Result Area */
-
-.insight-result {
-    margin-top: 20px;
-    padding: 22px 24px 25px;
-
-    background: #fff8dc;
-    border-top: 1px solid #ead9a4;
-}
-
-.insight-result > strong {
-    display: block;
-    margin-bottom: 8px;
-
-    color: #33291c;
-    font-size: 16px;
-}
-
-.insight-result p {
     margin: 0;
-
-    color: #66553d;
-    line-height: 1.65;
-    font-size: 14px;
+    color: #6b5837;
 }
 
 
-/* =========================================================
-   Q7 WIDE CARD
-   ========================================================= */
+/* Finding displayed underneath each visualisation */
 
-.insight-card-wide {
-    max-width: 1200px;
-    margin: 25px auto 50px;
+.story-insight {
+    margin-top: 25px;
+    padding: 22px 25px;
+    background: #fff8dc;
+    border-left: 4px solid #e5a11a;
+    border-radius: 6px;
 }
 
-.q7-chart-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-
-    padding: 0 5px;
+.story-insight h3 {
+    margin: 8px 0 10px;
+    font-size: 20px;
 }
 
-
-/* =========================================================
-   CONCLUSION
-   ========================================================= */
-
-.tv-insight-conclusion {
-    max-width: 1200px;
-
-    display: flex;
-    gap: 25px;
-    align-items: flex-start;
-
-    margin: 50px auto 10px;
-    padding: 35px;
-
-    background: #fff1bd;
-    border: 1px solid #e2c267;
-    border-radius: 14px;
-}
-
-.conclusion-icon {
-    min-width: 55px;
-    height: 55px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background: #453a2a;
-    color: #ffb21c;
-
-    border-radius: 50%;
-
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.tv-insight-conclusion h2 {
-    margin: 7px 0 15px;
-}
-
-.tv-insight-conclusion p {
-    margin: 0 0 12px;
+.story-insight p {
+    margin: 0;
     line-height: 1.7;
 }
 
 
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
+/* Final data story conclusion */
 
-@media (max-width: 1000px) {
-
-    .insights-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+.story-conclusion {
+    max-width: 1100px;
+    margin: 60px auto 20px;
+    padding: 35px;
+    background: #fff1bd;
+    border: 1px solid #e1bf67;
+    border-radius: 14px;
 }
 
+.story-conclusion h2 {
+    margin: 8px 0 18px;
+}
+
+.story-conclusion p {
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+
+/* Responsive data story */
 
 @media (max-width: 650px) {
 
-    .insights-grid {
-        grid-template-columns: 1fr;
+    .data-story-item {
+        padding: 20px;
+        margin: 30px auto;
     }
 
-    .q7-chart-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .tv-insight-conclusion {
+    .story-heading {
         flex-direction: column;
-        padding: 25px;
+        gap: 12px;
     }
 
-    .insight-chart img,
+    .story-heading h3 {
+        font-size: 19px;
+    }
+
     .chart-placeholder {
-        height: 220px;
+        min-height: 220px;
     }
 
-}
+    .story-conclusion {
+        padding: 25px 20px;
+    }
 }
